@@ -1,0 +1,13 @@
+set -ex
+
+invoke r --env-name=notebook
+invoke demofiles
+invoke talk -t demo
+rm -rf demofiles
+rm -rf notebooks
+rm -rf narrative
+rm -rf slides
+rm demo/notebooks/Julia.ipynb
+
+# Setup a workspace
+jupyter lab workspaces import .binder/workspace.json
