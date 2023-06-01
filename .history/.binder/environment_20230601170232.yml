@@ -16,7 +16,6 @@ dependencies:
 - xeus-python=0.9
 - ipywidgets=7.6
 - widgetsnbextension=3.5
-- numpy
 - ipyleaflet=0.13
 - altair=4.1
 - bqplot=0.12.20
